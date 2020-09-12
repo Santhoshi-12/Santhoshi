@@ -2,8 +2,8 @@ from  telegram.ext import Updater,CommandHandler
 from Adafruit_IO import Client, Feed,Data
 import requests #gets data from cloud
 import os
-name = os.getenv("name")
-key = os.getenv("key") 
+name = os.getenv("ADAFRUIT_IO_USERNAME")
+key = os.getenv("ADAFRUIT_IO_KEY") 
 aio = Client(name,key)
 # Create a data item with value 10 in the 'Test' feed.
 def on(bot,update):
