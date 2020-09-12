@@ -1,0 +1,6 @@
+adafruit-io
+python-telegram-bot
+Updater
+Client 
+Data
+requests
